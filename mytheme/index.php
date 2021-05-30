@@ -16,11 +16,13 @@
       <?php while (have_posts()) : the_post(); ?>
         <!-- 一覧表示 -->
         <div>
-          <h1><?php the_title(); ?>
-          </h1>
-          <p><?php the_excerpt(); ?></p>
-          <p><?php the_time(get_option('date_format')); ?></p>
-          <p><?php the_author(); ?></p>
+          <a href="<?php the_permalink(); ?>">
+            <h1><?php the_title(); ?>
+            </h1>
+            <p><?php the_excerpt(); ?></p>
+            <p><?php the_time(get_option('date_format')); ?></p>
+            <p><?php the_author(); ?></p>
+          </a>
         </div>
       <?php endwhile; ?>
     <?php else : ?>
