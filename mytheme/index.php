@@ -20,6 +20,7 @@
           </h1>
           <p><?php the_excerpt(); ?></p>
           <p><?php the_time(get_option('date_format')); ?></p>
+          <p><?php the_author(); ?></p>
         </div>
       <?php endwhile; ?>
     <?php else : ?>
