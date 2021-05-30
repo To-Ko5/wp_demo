@@ -18,6 +18,7 @@
         <div>
           <h1><?php the_title(); ?>
           </h1>
+          <p><?php the_excerpt(); ?></p>
           <p><?php the_time(get_option('date_format')); ?></p>
         </div>
       <?php endwhile; ?>
