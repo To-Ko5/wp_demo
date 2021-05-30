@@ -13,7 +13,11 @@
 <body>
   <div>
     <?php if (have_posts()) : ?>
-      <h1><?php echo $title = the_title(); ?></h1>
+      <?php while (have_posts()) : the_post(); ?>
+        <!-- 一覧表示 -->
+        <h1><?php the_title(); ?>
+        </h1>
+      <?php endwhile; ?>
     <?php else : ?>
       <h1>記事がありません</h1>
     <?php endif; ?>
