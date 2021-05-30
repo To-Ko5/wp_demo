@@ -15,8 +15,11 @@
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
         <!-- 一覧表示 -->
-        <h1><?php the_title(); ?>
-        </h1>
+        <div>
+          <h1><?php the_title(); ?>
+          </h1>
+          <p><?php the_time(get_option('date_format')); ?></p>
+        </div>
       <?php endwhile; ?>
     <?php else : ?>
       <h1>記事がありません</h1>
