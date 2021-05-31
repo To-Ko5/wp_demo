@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  <?php get_template_part('includes/header'); ?>
   <div>
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
@@ -24,6 +25,8 @@
       <h1>記事がありません</h1>
     <?php endif; ?>
   </div>
+
+  <?php get_template_part('includes/footer'); ?>
 
   <?php get_footer(); ?>
 </body>
