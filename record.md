@@ -1,0 +1,2 @@
+- テーマユニットテストデータの日本語版
+  - https://github.com/jawordpressorg/theme-test-data-ja
