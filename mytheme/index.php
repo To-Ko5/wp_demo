@@ -21,6 +21,10 @@
           </a>
         </div>
       <?php endwhile; ?>
+      <div>
+        <?php previous_posts_link(); ?>
+        <?php next_posts_link(); ?>
+      </div>
     <?php else : ?>
       <h1>記事がありません</h1>
     <?php endif; ?>
