@@ -7,7 +7,7 @@
 
 <body <?php body_class(); ?>>
   <?php get_template_part('includes/header'); ?>
-  <div>
+  <div class="container">
     <h1><?php bloginfo('name'); ?></h1>
     <p><?php bloginfo('description'); ?></p>
     <?php if (have_posts()) : ?>
@@ -23,7 +23,7 @@
           </a>
         </div>
       <?php endwhile; ?>
-      <div>
+      <div class="pagination">
         <?php previous_posts_link(); ?>
         <?php next_posts_link(); ?>
       </div>

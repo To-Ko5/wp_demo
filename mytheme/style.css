@@ -45,8 +45,23 @@ body {
   font-family:"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo, sans-serif;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .card {
   border: 1px solid #212121;
   padding: 8px;
   margin-bottom: 16px;
+}
+
+.card:hover {
+  background-color: #efefef;
+  transition: background-color 0.3s;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
 }
