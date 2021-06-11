@@ -50,6 +50,11 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  background-color: #212121;
+  color: #fafafa;
+}
+
 .card {
   border: 1px solid #212121;
   padding: 8px;

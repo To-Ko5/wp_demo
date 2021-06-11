@@ -1,5 +1,4 @@
 <?php wp_body_open(); ?>
-<header>
-  header
+<header class="header">
   <?php wp_nav_menu(); ?>
 </header>
