@@ -7,6 +7,13 @@ add_action("init", function () {
   register_nav_menus([
     "globanl_nav" => 'グローバルナビゲーション'
   ]);
+
+  // カスタム投稿
+  register_post_type('item', [
+    'label' => "商品",
+    'public' => true,
+    'menu_icon' => "dashicons-store",
+  ]);
 });
 
 
