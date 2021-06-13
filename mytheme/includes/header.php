@@ -1,4 +1,10 @@
 <?php wp_body_open(); ?>
 <header class="header">
-  <?php wp_nav_menu(); ?>
+  <div>
+    <h1><?php bloginfo('name'); ?></h1>
+  </div>
+
+  <div>
+    <?php wp_nav_menu(); ?>
+  </div>
 </header>

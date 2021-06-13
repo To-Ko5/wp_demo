@@ -53,6 +53,14 @@ body {
 .header {
   background-color: #212121;
   color: #fafafa;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu {
+  display: flex;
 }
 
 .card {
