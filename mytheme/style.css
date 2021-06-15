@@ -78,3 +78,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.footer {
+  background-color: #212121;
+  color: #fafafa;
+  padding: 16px;
+  text-align: center;
+}
