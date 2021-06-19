@@ -16,7 +16,14 @@ add_action("init", function () {
     'supports' => ['thumbnail', 'title', 'editor'],
     "has_archive" => true
   ]);
+
+  // カスタムタクソノミー
+  register_taxonomy('genre', 'item', [
+    'label' => "item genre",
+    "hierarchical" => true
+  ]);
 });
+
 
 
 /*
