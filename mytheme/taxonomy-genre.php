@@ -12,7 +12,7 @@
 
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
-        <p><?php the_title(); ?></p>
+        <p><?php the_archive_title(); ?></p>
       <?php endwhile; ?>
     <?php endif; ?>
   </div>
