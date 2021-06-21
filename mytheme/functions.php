@@ -13,7 +13,7 @@ add_action("init", function () {
     'label' => "商品",
     'public' => true,
     'menu_icon' => "dashicons-store",
-    'supports' => ['thumbnail', 'title', 'editor'],
+    'supports' => ['thumbnail', 'title', 'editor', 'custom-fields'],
     "has_archive" => true
   ]);
 
