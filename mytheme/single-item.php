@@ -9,6 +9,7 @@
   <?php get_template_part('includes/header'); ?>
   <div class="container">
     <p>アイテムページ</p>
+    <p><?php the_taxonomies(); ?></p>
     <?php get_template_part("template-parts/content", get_post_type()); ?>
   </div>
   <?php get_template_part('includes/footer'); ?>
