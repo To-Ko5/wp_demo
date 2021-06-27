@@ -16,5 +16,11 @@
     <dt>作者</dt>
     <dd><?php echo $author; ?></dd>
   <?php endif; ?>
-
+  　
+  <?php if ($writer !== '') : ?>
+    <dt>編集者</dt>
+    <?php foreach ($writer as $w) : ?>
+      <dd><?php echo esc_html($w); ?></dd>
+    <?php endforeach; ?>
+  <?php endif; ?>
 </dl>
