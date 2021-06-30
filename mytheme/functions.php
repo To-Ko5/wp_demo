@@ -1,26 +1,31 @@
 <?php
-add_action("init", function () {
-  add_theme_support("title-tag");
-  add_theme_support("post-thumbnails");
+
+add_shortcode('date', function () {
+  return date('Y/n/j');
+});
+
+add_action('init', function () {
+  add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
 
   // menuを追加
   register_nav_menus([
-    "globanl_nav" => 'グローバルナビゲーション'
+    'globanl_nav' => 'グローバルナビゲーション'
   ]);
 
   // カスタム投稿
   register_post_type('item', [
-    'label' => "商品",
+    'label' => '商品',
     'public' => true,
-    'menu_icon' => "dashicons-store",
+    'menu_icon' => 'dashicons-store',
     'supports' => ['thumbnail', 'title', 'editor', 'custom-fields'],
-    "has_archive" => true
+    'has_archive' => true
   ]);
 
   // カスタムタクソノミー
   register_taxonomy('genre', 'item', [
-    'label' => "item genre",
-    "hierarchical" => true
+    'label' => 'item genre',
+    'hierarchical' => true
   ]);
 });
 
