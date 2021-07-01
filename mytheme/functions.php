@@ -4,6 +4,14 @@ add_shortcode('date', function () {
   return date('Y/n/j');
 });
 
+add_shortcode('sum', function ($atts) {
+  $atts = shortcode_atts([
+    'x' => 0,
+    'y' => 0
+  ], $atts, 'sum');
+  return $atts['x'] + $atts['y'];
+});
+
 add_action('init', function () {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
