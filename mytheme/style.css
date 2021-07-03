@@ -67,6 +67,10 @@ body {
   display: flex;
 }
 
+.menu-item {
+  margin-right: 16px;
+}
+
 .blog-info {
   margin-bottom: 24px;
 }
