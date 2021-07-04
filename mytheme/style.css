@@ -71,6 +71,15 @@ body {
   margin-right: 16px;
 }
 
+.menu-item > a {
+   border-bottom: 1px solid transparent;
+}
+
+.menu-item > a:hover {
+  border-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
 .blog-info {
   margin-bottom: 24px;
 }
