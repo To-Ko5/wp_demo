@@ -13,18 +13,20 @@
       <p><?php bloginfo('description'); ?></p>
     </div>
     <?php if (have_posts()) : ?>
-      <?php while (have_posts()) : the_post(); ?>
-        <!-- 一覧表示 -->
-        <div class="card">
-          <a href="<?php the_permalink(); ?>">
-            <p><?php the_title(); ?>
-            </p>
-            <p><?php the_excerpt(); ?></p>
-            <p><?php the_time(get_option('date_format')); ?></p>
-            <p><?php the_author(); ?></p>
-          </a>
-        </div>
-      <?php endwhile; ?>
+      <div class="contents">
+        <?php while (have_posts()) : the_post(); ?>
+          <!-- 一覧表示 -->
+          <div class="card">
+            <a href="<?php the_permalink(); ?>">
+              <p><?php the_title(); ?>
+              </p>
+              <p><?php the_excerpt(); ?></p>
+              <p><?php the_time(get_option('date_format')); ?></p>
+              <p><?php the_author(); ?></p>
+            </a>
+          </div>
+        <?php endwhile; ?>
+      </div>
       <div class="pagination">
         <?php previous_posts_link(); ?>
         <?php next_posts_link(); ?>
