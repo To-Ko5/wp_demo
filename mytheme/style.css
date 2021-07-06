@@ -111,6 +111,15 @@ body {
   justify-content: space-between;
 }
 
+.pagination > a  {
+  border-bottom: 1px solid transparent;
+}
+
+.pagination > a:hover  {
+  border-color: #212121;
+  transition: border-color 0.3s;
+}
+
 .footer {
   background-color: #212121;
   color: #fafafa;
