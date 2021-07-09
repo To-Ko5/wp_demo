@@ -64,7 +64,7 @@ body {
 }
 
 .header__title > h1 {
-   margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .header .menu {
@@ -76,7 +76,7 @@ body {
 }
 
 .menu-item > a {
-   border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .menu-item > a:hover {
