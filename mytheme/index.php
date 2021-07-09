@@ -8,10 +8,6 @@
 <body <?php body_class(); ?>>
   <?php get_template_part('includes/header'); ?>
   <div class="container">
-    <div class="blog-info">
-      <h1><?php bloginfo('name'); ?></h1>
-      <p><?php bloginfo('description'); ?></p>
-    </div>
     <?php if (have_posts()) : ?>
       <div class="contents">
         <?php while (have_posts()) : the_post(); ?>

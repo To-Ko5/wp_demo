@@ -63,6 +63,10 @@ body {
   margin-bottom: 24px;
 }
 
+.header__title > h1 {
+   margin-bottom: 8px;
+}
+
 .header .menu {
   display: flex;
 }
@@ -78,10 +82,6 @@ body {
 .menu-item > a:hover {
   border-color: #fafafa;
   transition: border-color 0.3s;
-}
-
-.blog-info {
-  margin-bottom: 24px;
 }
 
 .contents {
