@@ -10,8 +10,8 @@
   <div class="container">
     <?php if (have_posts()) : ?>
       <div class="contents">
+        <!-- 一覧表示 -->
         <?php while (have_posts()) : the_post(); ?>
-          <!-- 一覧表示 -->
           <div class="card">
             <a href="<?php the_permalink(); ?>">
               <p><?php the_title(); ?>
