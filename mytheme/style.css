@@ -109,7 +109,6 @@ body {
 .card {
   border: 1px solid #212121;
   padding: 8px;
-  margin-bottom: 16px;
 }
 
 .card:hover {
