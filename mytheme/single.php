@@ -8,8 +8,6 @@
 <body <?php body_class(); ?>>
   <?php get_template_part('includes/header'); ?>
   <div class="container">
-    <p>詳細ページ</p>
-
     <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
         <h1><?php the_title(); ?></h1>
