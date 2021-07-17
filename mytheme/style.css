@@ -112,6 +112,11 @@ body {
   padding: 8px;
 }
 
+.card > a {
+  display: grid;
+  gap: 8px;
+}
+
 .card:hover {
   background-color: #efefef;
   transition: background-color 0.3s;
