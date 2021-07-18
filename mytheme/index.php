@@ -29,6 +29,7 @@
       </div>
     <?php else : ?>
       <h1>記事がありません</h1>
+      <div><a href="/">トップへ戻る</a></div>
     <?php endif; ?>
   </div>
 
