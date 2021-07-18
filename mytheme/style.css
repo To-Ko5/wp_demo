@@ -112,6 +112,10 @@ body {
   padding: 8px;
 }
 
+.card  p {
+  line-height: 1.6;
+}
+
 .card > a {
   display: grid;
   gap: 8px;
