@@ -5,7 +5,10 @@
     <p><?php bloginfo('description'); ?></p>
   </div>
 
-  <div class="header__menu">
+  <div class="header_menu header_menu__pc">
+    <?php wp_nav_menu(); ?>
+  </div>
+  <div class="header_menu header_menu__not_pc">
     <?php wp_nav_menu(); ?>
   </div>
 </header>
