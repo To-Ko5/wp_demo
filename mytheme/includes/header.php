@@ -8,7 +8,7 @@
   <div class="header_menu header_menu__pc">
     <?php wp_nav_menu(); ?>
   </div>
-  <div id="menu" class="header_menu header_menu__not_pc open_menu">
+  <div id="menu" class="header_menu header_menu__not_pc">
     <?php wp_nav_menu(); ?>
   </div>
 
